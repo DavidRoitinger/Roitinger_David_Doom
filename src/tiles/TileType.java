@@ -1,5 +1,5 @@
 package tiles;
 
 public enum TileType {
-    Enemy, Wall, WeakWall, Empty, Treasure, Player, Trader, Event
+    Enemy, Wall, WeakWall, InsideWall, Empty, Treasure, Player, Trader, Event
 }

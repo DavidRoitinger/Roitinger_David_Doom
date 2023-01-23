@@ -1,5 +1,8 @@
+import tiles.Tile;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Tile[][] tiles = ReadLayout.read("Layout.txt");
+        PrintManager.printCurrentMap(tiles);
     }
 }

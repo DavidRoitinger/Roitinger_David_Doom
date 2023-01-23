@@ -1,4 +1,7 @@
 package tiles;
 
-public class Player {
+public class Player extends Tile{
+    public Player() {
+        tileType = TileType.Player;
+    }
 }

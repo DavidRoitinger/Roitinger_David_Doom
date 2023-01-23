@@ -1,7 +1,7 @@
 package tiles;
 
 public abstract class Tile {
-    private TileType tileType;
+    public TileType tileType;
 
     @Override
     public String toString() {
@@ -10,9 +10,10 @@ public abstract class Tile {
             case Enemy -> "X";
             case Wall -> "#";
             case WeakWall -> "*";
+            case InsideWall -> ".";
             case Empty -> " ";
             case Treasure -> "S";
-            case Player -> "@";
+            case Player -> "ඞ";
             case Trader -> "€";
             case Event -> "!";
             default -> "?";
