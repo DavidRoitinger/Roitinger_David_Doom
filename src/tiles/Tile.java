@@ -1,3 +1,5 @@
+package tiles;
+
 public abstract class Tile {
     private TileType tileType;
 
@@ -7,6 +9,7 @@ public abstract class Tile {
         return switch (tileType){
             case Enemy -> "X";
             case Wall -> "#";
+            case WeakWall -> "*";
             case Empty -> " ";
             case Treasure -> "S";
             case Player -> "@";
