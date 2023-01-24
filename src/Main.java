@@ -1,8 +1,10 @@
 import tiles.Tile;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Tile[][] tiles = ReadLayout.read("Layout.txt");
-        PrintManager.printCurrentMap(tiles);
+        Manager manager = new Manager();
+        manager.startGame();
     }
 }
