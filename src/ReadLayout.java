@@ -1,9 +1,11 @@
+import org.w3c.dom.events.Event;
 import tiles.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class ReadLayout {
@@ -21,18 +23,17 @@ public class ReadLayout {
             throw new RuntimeException();
         }
 
-
         for (int i = 0; i < HEIGHT; i++) {
             splitLine = list.get(i).split("(?!^)");
             for (int j = 0; j < LENGTH; j++) {
                 tileMap[i][j] = switch (splitLine[j]){
-                    case "#" -> new Wall();
-                    case "*" -> new WeakWall();
-                    case "." -> new InsideWall();
-                    case "!" -> new Event();
-                    case "S" -> new Treasure();
-                    case "@" -> new Player();
-                    case " " -> new Empty();
+                    case "#" -> new Tile(TileType.Wall);
+                    case "*" -> new Tile(TileType.WeakWall);
+                    case "." -> new Tile(TileType.InsideWall);
+                    case "!" -> new Tile(TileType.Event);
+                    case "S" -> new Tile(TileType.Treasure);
+                    case "@" -> new Tile(TileType.Player);
+                    case " " -> new Tile(TileType.Empty);
                     default -> null;
                 };
             }

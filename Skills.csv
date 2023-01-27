@@ -1,0 +1,11 @@
+tear;name;damage;damageSpread;critChance;useCostHP;useCostMP
+0;Punch;3;0;5;0;0
+0;Critical Tickel;2;0;50;0;1
+1;Critical Hit;3;0;50;0;3
+2;Critical Slam;4;0;50;0;5
+3;Critical Skull Bash;5;0;50;0;
+1;Maelstrom;5;4;5;1;2
+2;Moonraze Maelstrom;6;4;5;2;3
+3;Menacing Moonraze Maelstrom;10;10;5;3;5
+2;Bad Cock;5;5;5;2;0
+3;Berger-Rauch;10;5;5;5;0

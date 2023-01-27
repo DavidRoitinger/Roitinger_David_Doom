@@ -1,7 +1,11 @@
 package tiles;
 
-public abstract class Tile {
+public class Tile {
     public TileType tileType;
+
+    public Tile(TileType tileType) {
+        this.tileType = tileType;
+    }
 
     @Override
     public String toString() {
